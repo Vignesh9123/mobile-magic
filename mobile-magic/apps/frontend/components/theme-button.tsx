@@ -26,7 +26,12 @@ export const ThemeButton = () => {
 
 	return (
 		<div className="flex items-center gap-2 justify-center bg-zinc-100 dark:bg-zinc-900 cursor-pointer rounded-3xl border hover:border-teal-800">
-			<div className={cn("flex h-fit w-15 dark:justify-end justify-start")}>
+			<div onClick={()=>{
+				setTheme((prev)=>{
+					if(prev === "light") return "dark";
+					return "light";
+				})
+			}} className={cn("flex h-fit w-15 dark:justify-end justify-start")}>
 				<motion.div layout transition={{ type: "spring", visibility: 0.2, bounce: 0.2 }}>
 					<OuterLayer className="hidden dark:flex" onClick={() => setTheme("light")}>
 						<Moon className="h-[1rem] w-[1rem]" />

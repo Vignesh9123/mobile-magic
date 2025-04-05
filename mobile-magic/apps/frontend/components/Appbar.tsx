@@ -26,9 +26,9 @@ export function Appbar() {
 	<ThemeButton />
 
         <SignedOut>
-          <SignInButton>
+          <SignInButton >
             <button
-              className="border border-zinc-800 hover:bg-zinc-600/10 bg-zinc-900 cursor-pointer px-4 py-2 rounded-3xl"
+              className="border border-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-600/10 bg-zinc-100 dark:bg-zinc-900 cursor-pointer px-4 py-2 rounded-3xl hidden md:block"
             >
               Sign In
             </button>
@@ -36,9 +36,16 @@ export function Appbar() {
 
           <SignUpButton>
             <button
-              className="border border-zinc-800 hover:bg-zinc-600/10 bg-zinc-900 cursor-pointer px-4 py-2 rounded-3xl"
+              className="border border-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-600/10 bg-zinc-100 dark:bg-zinc-900 cursor-pointer px-4 py-2 rounded-3xl hidden md:block"
             >
               Sign Up
+            </button>
+          </SignUpButton>
+          <SignUpButton>
+            <button
+              className="border border-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-600/10 bg-zinc-100 dark:bg-zinc-900 cursor-pointer px-4 py-2 rounded-3xl block md:hidden"
+            >
+              Get Started
             </button>
           </SignUpButton>
         </SignedOut>

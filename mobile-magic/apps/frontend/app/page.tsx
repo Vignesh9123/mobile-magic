@@ -11,7 +11,7 @@ export default function Home() {
           <div className="space-y-4">
             <Appbar />
 
-            <div className="max-w-2xl mx-auto pt-32">
+            <div className="max-w-2xl mx-auto pt-24 sm:pt-32">
     	      <Hero />
 
               <div className="pt-4">
